@@ -44,6 +44,7 @@ public class EnemyView : MonoBehaviour
 		if(CanSeePlayer())
         {
             spotLight.color = Color.red;
+            //Attack();
         }
         else
         {
