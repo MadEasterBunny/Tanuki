@@ -8,8 +8,8 @@ public class ControlledPatrol : MonoBehaviour
     [SerializeField]
     float totalWaitTime = 3f;
 
-    [SerializeField]
-    float switchProbability = 0.2f;
+    //[SerializeField]
+    //float switchProbability = 0.2f;
 
     [SerializeField]
     bool patrolWaiting;
