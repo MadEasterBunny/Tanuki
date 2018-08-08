@@ -8,6 +8,8 @@ public class EnemyView : MonoBehaviour
     public Light spotLight;
     public float viewDistance;
     public LayerMask viewMask;
+    public float normalSpeed = 5f;
+    public float chaseSpeed = 15f;
 
     private Color originalColor;
     private float viewAngle;
@@ -49,12 +51,13 @@ public class EnemyView : MonoBehaviour
 		if(CanSeePlayer())
         {
             spotLight.color = Color.red;
-            Attack();
+            ChaseTarget();
+            FacePlayer();
         }
         else
         {
             spotLight.color = originalColor;
-            Normal();
+            NormalPatrol();
         }
 	}
 
@@ -64,14 +67,21 @@ public class EnemyView : MonoBehaviour
         Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
     }
 
-    void Attack()
+    void ChaseTarget()
     {
-        agent.speed = 20;
+        agent.speed = chaseSpeed;
         agent.SetDestination(player.position);
     }
 
-    void Normal()
+    void FacePlayer()
     {
-        agent.speed = 5f;
+        Vector3 direction = (player.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
+    void NormalPatrol()
+    {
+        agent.speed = normalSpeed;
     }
 }
