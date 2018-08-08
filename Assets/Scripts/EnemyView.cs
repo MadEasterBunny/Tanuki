@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyView : MonoBehaviour
 {
@@ -11,13 +12,17 @@ public class EnemyView : MonoBehaviour
     private Color originalColor;
     private float viewAngle;
     Transform player;
+    NavMeshAgent agent;
 
 	// Use this for initialization
 	void Start ()
     {
         viewAngle = spotLight.spotAngle;
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
+
+        player = PlayerManager.instance.player.transform;
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
         originalColor = spotLight.color;
 	}
 
@@ -44,11 +49,12 @@ public class EnemyView : MonoBehaviour
 		if(CanSeePlayer())
         {
             spotLight.color = Color.red;
-            //Attack();
+            Attack();
         }
         else
         {
             spotLight.color = originalColor;
+            Normal();
         }
 	}
 
@@ -56,5 +62,16 @@ public class EnemyView : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
+    }
+
+    void Attack()
+    {
+        agent.speed = 20;
+        agent.SetDestination(player.position);
+    }
+
+    void Normal()
+    {
+        agent.speed = 5f;
     }
 }
