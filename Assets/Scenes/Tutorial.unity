@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 9777887}
   - component: {fileID: 9777886}
   - component: {fileID: 9777891}
+  - component: {fileID: 9777892}
   m_Layer: 0
   m_Name: Tanuki
   m_TagString: Player
@@ -221,6 +222,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7779dcc36e7828947aad1aa8c564dca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9777892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9777885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9e849f20a15094cb9328af57c4f6ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!1001 &12626483
 Prefab:
   m_ObjectHideFlags: 0
@@ -1673,6 +1686,7 @@ GameObject:
   - component: {fileID: 974006450}
   - component: {fileID: 974006455}
   - component: {fileID: 974006456}
+  - component: {fileID: 974006457}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1799,6 +1813,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalWaitTime: 3
   patrolWaiting: 1
+--- !u!114 &974006457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974006449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696dde9139c70b245927a59fb7cfef6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  targetTransform: {fileID: 9777890}
 --- !u!1 &1033736428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 190554, guid: 0db4abb2b5b058949ae0e17099b67f37,
