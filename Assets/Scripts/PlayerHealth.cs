@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
         enemy.Attack(this);
         if(health <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
