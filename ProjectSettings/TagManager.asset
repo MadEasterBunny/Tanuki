@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Enemy
   - Waypoint
+  - Hiding
   layers:
   - Default
   - TransparentFX
