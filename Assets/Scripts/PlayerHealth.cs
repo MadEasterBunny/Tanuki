@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -23,7 +24,8 @@ public class PlayerHealth : MonoBehaviour
         enemy.Attack(this);
         if(health <= 0)
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
+            Invoke("LoadScene", 3);
         }
     }
 
@@ -31,5 +33,10 @@ public class PlayerHealth : MonoBehaviour
     {
         EnemyAttack enemy = collision.collider.gameObject.GetComponent <EnemyAttack> ();
         CollidedWithEnemy(enemy);
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }

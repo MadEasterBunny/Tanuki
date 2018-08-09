@@ -16,6 +16,8 @@ public class EnemyView : MonoBehaviour
     Transform player;
     NavMeshAgent agent;
 
+    PlayerHealth playerHealth;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -24,6 +26,7 @@ public class EnemyView : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         player = PlayerManager.instance.player.transform;
+        
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         originalColor = spotLight.color;
 	}
@@ -55,6 +58,12 @@ public class EnemyView : MonoBehaviour
             FacePlayer();
         }
         else
+        {
+            spotLight.color = originalColor;
+            NormalPatrol();
+        }
+
+        if(playerHealth.health <= 0)
         {
             spotLight.color = originalColor;
             NormalPatrol();
