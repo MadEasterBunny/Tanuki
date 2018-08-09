@@ -62,12 +62,6 @@ public class EnemyView : MonoBehaviour
             spotLight.color = originalColor;
             NormalPatrol();
         }
-
-        if(playerHealth.health <= 0)
-        {
-            spotLight.color = originalColor;
-            NormalPatrol();
-        }
 	}
 
     private void OnDrawGizmos()

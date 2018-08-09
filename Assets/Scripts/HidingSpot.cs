@@ -19,17 +19,11 @@ public class HidingSpot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            player.tag = "Hiding";
-        }
+        player.layer = 10;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Hiding")
-        {
-            player.tag = "Player";
-        }
+        player.layer = 0;
     }
 }
