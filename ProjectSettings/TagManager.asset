@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Waypoint
   - Hiding
+  - Leaf
+  - LeafButton
   layers:
   - Default
   - TransparentFX
