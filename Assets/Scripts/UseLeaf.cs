@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class UseLeaf : MonoBehaviour
 {
+    //public PlayerManager player;
+    Transform player;
+    public GameObject tanukiGFX;
+    public GameObject otherGFX;
+    public GameObject leafButton;
 
 	// Use this for initialization
 	void Start ()
     {
-       
+        player = PlayerManager.instance.player.transform;
 	}
 	
 	// Update is called once per frame
@@ -20,12 +25,26 @@ public class UseLeaf : MonoBehaviour
 
     public void ChangeForms()
     {
-        //player particle effect.
-        //deactivate tanuki graphics.
-        //activate other graphics based on random range.
-        //deactivate effects after a few seconds.
-        //play particle effect again.
-        //restore everything back to normal.
-        Debug.Log("Leaf Used.");
+        OtherForm();
+        Invoke("Tanuki", 5);
+    }
+
+    public void Tanuki()
+    {
+        player.GetComponent<ParticleSystem>().Play();
+        player.GetComponent<PlayerController>().enabled = true;
+        player.GetComponent<CharacterAnimator>().enabled = true;
+        otherGFX.SetActive(false);
+        tanukiGFX.SetActive(true);
+    }
+
+    public void OtherForm()
+    {
+        player.GetComponent<ParticleSystem>().Play();
+        player.GetComponent<PlayerController>().enabled = false;
+        player.GetComponent<CharacterAnimator>().enabled = false;
+        tanukiGFX.SetActive(false);
+        otherGFX.SetActive(true);
+        leafButton.SetActive(false);
     }
 }
