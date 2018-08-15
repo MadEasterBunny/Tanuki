@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 9777888}
   - component: {fileID: 9777895}
   - component: {fileID: 9777894}
+  - component: {fileID: 9777896}
   m_Layer: 0
   m_Name: Tanuki
   m_TagString: Player
@@ -4896,6 +4897,20 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &9777896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9777885}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0103e3df25193ea4c8581d859231b698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 282840813}
+  damage: 1
+  attackDuration: 0.3
 --- !u!1001 &12626483
 Prefab:
   m_ObjectHideFlags: 0
@@ -9509,7 +9524,7 @@ MonoBehaviour:
   tanukiGFX: {fileID: 1453272008}
   otherGFX: {fileID: 79665772}
   leafButton: {fileID: 1846706350}
-  hidden: {fileID: 0}
+  attack: {fileID: 0}
 --- !u!1 &509258473
 GameObject:
   m_ObjectHideFlags: 0
@@ -12314,6 +12329,7 @@ GameObject:
   - component: {fileID: 974006455}
   - component: {fileID: 974006456}
   - component: {fileID: 974006457}
+  - component: {fileID: 974006458}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -12453,6 +12469,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   targetTransform: {fileID: 9777890}
+--- !u!114 &974006458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974006449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829ac753ffd357a40a717b3f85f72a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
 --- !u!1 &1033736428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 190554, guid: 0db4abb2b5b058949ae0e17099b67f37,

@@ -10,6 +10,7 @@ public class UseLeaf : MonoBehaviour
     public GameObject tanukiGFX;
     public GameObject otherGFX;
     public GameObject leafButton;
+    public Rigidbody attack;
 
 	// Use this for initialization
 	void Start ()
@@ -32,23 +33,17 @@ public class UseLeaf : MonoBehaviour
     public void Tanuki()
     {
         player.GetComponent<ParticleSystem>().Play();
-        player.gameObject.layer = 0;
-        player.GetComponent<PlayerController>().enabled = true;
-        player.GetComponent<PlayerMotor>().enabled = true;
-        player.GetComponent<NavMeshAgent>().enabled = true;
         player.GetComponent<CharacterAnimator>().enabled = true;
+        player.GetComponent<PlayerAttack>().enabled = false;
         otherGFX.SetActive(false);
         tanukiGFX.SetActive(true);
     }
 
     public void OtherForm()
     {
-        player.gameObject.layer = 10;
         player.GetComponent<ParticleSystem>().Play();
-        player.GetComponent<PlayerController>().enabled = false;
-        player.GetComponent<PlayerMotor>().enabled = false;
-        player.GetComponent<NavMeshAgent>().enabled = false;
         player.GetComponent<CharacterAnimator>().enabled = false;
+        player.GetComponent<PlayerAttack>().enabled = true;
         tanukiGFX.SetActive(false);
         otherGFX.SetActive(true);
         leafButton.SetActive(false);
