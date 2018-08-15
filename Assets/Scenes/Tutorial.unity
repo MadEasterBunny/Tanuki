@@ -1518,8 +1518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 9777890}
-  offset: {x: -2.09, y: -1.13, z: 0.77}
-  pitch: -5.32
+  offset: {x: -1.8, y: -1.07, z: 0.68}
+  pitch: -1.49
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
