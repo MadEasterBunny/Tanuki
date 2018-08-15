@@ -10,7 +10,8 @@ public class CharacterAnimator : MonoBehaviour
     Animator animator;
     NavMeshAgent agent;
     bool hiding;
-    //float crawling;
+    float crawlSpeed = 4f;
+    float normalSpeed = 8f;
 
     public GameObject player;
 
@@ -34,6 +35,7 @@ public class CharacterAnimator : MonoBehaviour
             hiding = true;
             if (speedPercent > 0.3f)
             {
+                agent.speed = crawlSpeed;
                 animator.SetFloat("speedPercent", speedPercent, locomotionAnimationSmoothTime, Time.deltaTime);
             }
             else 
@@ -44,6 +46,7 @@ public class CharacterAnimator : MonoBehaviour
         else
         {
             hiding = false;
+            agent.speed = normalSpeed;
         }
 
         if(hiding == true)
