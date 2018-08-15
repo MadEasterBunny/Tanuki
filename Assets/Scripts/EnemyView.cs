@@ -9,7 +9,7 @@ public class EnemyView : MonoBehaviour
     public float viewDistance;
     public LayerMask viewMask;
     public float normalSpeed = 5f;
-    public float chaseSpeed = 15f;
+    public float chaseSpeed = 12f;
 
     private Color originalColor;
     private float viewAngle;

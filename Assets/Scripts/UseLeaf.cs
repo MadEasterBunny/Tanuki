@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public class UseLeaf : MonoBehaviour
 {
-    //public PlayerManager player;
     Transform player;
     public GameObject tanukiGFX;
     public GameObject otherGFX;
