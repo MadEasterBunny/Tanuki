@@ -12264,7 +12264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunDistance: 10
-  fleeSpeed: 8
+  fleeSpeed: 10
 --- !u!54 &974006451
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12346,7 +12346,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   normalSpeed: 5
-  chaseSpeed: 15
+  chaseSpeed: 12
   enemyDistanceRun: 4
 --- !u!114 &974006456
 MonoBehaviour:

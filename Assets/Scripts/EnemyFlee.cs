@@ -24,10 +24,23 @@ public class EnemyFlee : MonoBehaviour
 
         if(distance < enemyRunDistance)
         {
-            agent.speed = fleeSpeed;
             Vector3 dirToPlayer = transform.position - player.position;
             Vector3 newPos = transform.position + dirToPlayer;
             agent.SetDestination(newPos);
+            StartCoroutine("IncreaseSpeedPerSecond", 1f);
+            if(agent.speed > fleeSpeed)
+            {
+                agent.speed = fleeSpeed;
+            }
         }
 	}
+
+    IEnumerator IncreaseSpeedPerSecond(float waitTime)
+    {
+        while(agent.speed < fleeSpeed)
+        {
+            yield return new WaitForSeconds(waitTime);
+            agent.speed = agent.speed + 0.5f;
+        }
+    }
 }

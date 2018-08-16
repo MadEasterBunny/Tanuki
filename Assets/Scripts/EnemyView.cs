@@ -57,6 +57,10 @@ public class EnemyView : MonoBehaviour
             spotLight.color = Color.red;
             ChaseTarget();
             FacePlayer();
+            if(agent.speed > chaseSpeed)
+            {
+                agent.speed = chaseSpeed;
+            }
         }
         else
         {
@@ -73,8 +77,8 @@ public class EnemyView : MonoBehaviour
 
     void ChaseTarget()
     {
-        agent.speed = chaseSpeed;
         agent.SetDestination(player.transform.position);
+        StartCoroutine("IncreaseSpeedPerSecond", 1f); 
     }
 
     void FacePlayer()
@@ -90,5 +94,14 @@ public class EnemyView : MonoBehaviour
     void NormalPatrol()
     {
         agent.speed = normalSpeed;
+    }
+
+    IEnumerator IncreaseSpeedPerSecond(float waitTime)
+    {
+        while(agent.speed < chaseSpeed)
+        {
+            yield return new WaitForSeconds(waitTime);
+            agent.speed = agent.speed + 0.5f;
+        }
     }
 }
