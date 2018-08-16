@@ -10,6 +10,7 @@ TagManager:
   - Hiding
   - Leaf
   - LeafButton
+  - ForestMonster
   layers:
   - Default
   - TransparentFX

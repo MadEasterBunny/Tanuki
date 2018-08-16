@@ -7,15 +7,16 @@ using UnityEngine.AI;
 public class UseLeaf : MonoBehaviour
 {
     Transform player;
+    Transform enemy;
     public GameObject tanukiGFX;
     public GameObject otherGFX;
     public GameObject leafButton;
-    public Rigidbody attack;
 
 	// Use this for initialization
 	void Start ()
     {
         player = PlayerManager.instance.player.transform;
+        enemy = EnemyManager.instance.enemy.transform;
 	}
 	
 	// Update is called once per frame
@@ -27,14 +28,17 @@ public class UseLeaf : MonoBehaviour
     public void ChangeForms()
     {
         OtherForm();
-        Invoke("Tanuki", 5);
+        Invoke("Tanuki", 15);
     }
 
     public void Tanuki()
     {
         player.GetComponent<ParticleSystem>().Play();
         player.GetComponent<CharacterAnimator>().enabled = true;
-        player.GetComponent<PlayerAttack>().enabled = false;
+        player.GetComponent<PlayerHealth>().enabled = true;
+        enemy.GetComponent<EnemyView>().enabled = true;
+        enemy.GetComponent<EnemyFlee>().enabled = false;
+        player.tag = "Player";
         otherGFX.SetActive(false);
         tanukiGFX.SetActive(true);
     }
@@ -43,7 +47,10 @@ public class UseLeaf : MonoBehaviour
     {
         player.GetComponent<ParticleSystem>().Play();
         player.GetComponent<CharacterAnimator>().enabled = false;
-        player.GetComponent<PlayerAttack>().enabled = true;
+        player.GetComponent<PlayerHealth>().enabled = false;
+        enemy.GetComponent<EnemyView>().enabled = false;
+        enemy.GetComponent<EnemyFlee>().enabled = true;
+        player.tag = "ForestMonster";
         tanukiGFX.SetActive(false);
         otherGFX.SetActive(true);
         leafButton.SetActive(false);

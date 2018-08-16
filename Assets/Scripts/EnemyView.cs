@@ -10,10 +10,11 @@ public class EnemyView : MonoBehaviour
     public LayerMask viewMask;
     public float normalSpeed = 5f;
     public float chaseSpeed = 12f;
+    public float enemyDistanceRun = 4.0f;
 
     private Color originalColor;
     private float viewAngle;
-    Transform player;
+    GameObject player;
     NavMeshAgent agent;
 
     PlayerHealth playerHealth;
@@ -25,7 +26,7 @@ public class EnemyView : MonoBehaviour
 
         agent = GetComponent<NavMeshAgent>();
 
-        player = PlayerManager.instance.player.transform;
+        player = PlayerManager.instance.player.gameObject;
         
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         originalColor = spotLight.color;
@@ -33,13 +34,13 @@ public class EnemyView : MonoBehaviour
 
     bool CanSeePlayer()
     {
-        if(Vector3.Distance(transform.position, player.position) < viewDistance)
+        if(Vector3.Distance(transform.position, player.transform.position) < viewDistance)
         {
-            Vector3 dirToPlayer = (player.position - transform.position).normalized;
+            Vector3 dirToPlayer = (player.transform.position - transform.position).normalized;
             float angleBetweenEnemyAndPlayer = Vector3.Angle(transform.forward, dirToPlayer);
             if (angleBetweenEnemyAndPlayer < viewAngle / 2f)
             {
-                if (!Physics.Linecast(transform.position, player.position, viewMask))
+                if (!Physics.Linecast(transform.position, player.transform.position, viewMask))
                 {
                     return true;
                 }
@@ -73,12 +74,12 @@ public class EnemyView : MonoBehaviour
     void ChaseTarget()
     {
         agent.speed = chaseSpeed;
-        agent.SetDestination(player.position);
+        agent.SetDestination(player.transform.position);
     }
 
     void FacePlayer()
     {
-        Vector3 direction = (player.position - transform.position).normalized;
+        Vector3 direction = (player.transform.position - transform.position).normalized;
         if (direction != Vector3.zero)
         {
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
