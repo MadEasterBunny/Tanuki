@@ -6,7 +6,8 @@ public class ControlledWaypoints : MonoBehaviour
 {
     [SerializeField]
     private float waypointRadius = 1f;
-    private float connectedRadius = 50f;
+    [SerializeField]
+    private float connectedRadius = 40f;
 
     List<ControlledWaypoints> connections;
 

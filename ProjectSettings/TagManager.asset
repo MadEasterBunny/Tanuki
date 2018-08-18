@@ -11,6 +11,7 @@ TagManager:
   - Leaf
   - LeafButton
   - ForestMonster
+  - Dog Waypoint
   layers:
   - Default
   - TransparentFX
