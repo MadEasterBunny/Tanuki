@@ -17,7 +17,7 @@ public class HidingSpot : MonoBehaviour
 	
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         player.layer = 10;
     }
