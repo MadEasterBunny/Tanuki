@@ -44,7 +44,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        //dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
     void EndDialogue()
@@ -52,5 +54,15 @@ public class DialogueManager : MonoBehaviour
         agent.isStopped = false;
         animator.SetBool("isOpen", false);
         //Debug.Log("End of conversation.");
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 }
