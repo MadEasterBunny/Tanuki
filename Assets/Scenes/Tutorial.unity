@@ -32683,6 +32683,7 @@ MonoBehaviour:
   nameText: {fileID: 1132398429}
   dialogueText: {fileID: 1803461850}
   animator: {fileID: 212465451}
+  agent: {fileID: 9777889}
 --- !u!1 &509258473
 GameObject:
   m_ObjectHideFlags: 0
@@ -45739,8 +45740,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 198.94568, y: 7.514216, z: 1}
-  m_Center: {x: -6.3986053, y: 2.031944, z: 0}
+  m_Size: {x: 198.94568, y: 7.514216, z: 4.1271667}
+  m_Center: {x: -6.3986053, y: 2.031944, z: 1.5635834}
 --- !u!4 &1241531321
 Transform:
   m_ObjectHideFlags: 0

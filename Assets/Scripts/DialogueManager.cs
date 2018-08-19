@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public Animator animator;
+    public NavMeshAgent agent;
+
 	
 	void Start ()
     {
@@ -18,6 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        agent.isStopped = true;
         animator.SetBool("isOpen", true);
         nameText.text = dialogue.name;
 
@@ -45,6 +49,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        agent.isStopped = false;
         animator.SetBool("isOpen", false);
         //Debug.Log("End of conversation.");
     }
