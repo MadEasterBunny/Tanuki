@@ -30,4 +30,12 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject == player)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
