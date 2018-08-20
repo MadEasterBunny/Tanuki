@@ -7,15 +7,9 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     private GameObject player;
 
-	// Use this for initialization
 	void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
     public void TriggerDialogue()
@@ -31,14 +25,6 @@ public class DialogueTrigger : MonoBehaviour
             Invoke("OnDestroy", 1f);
         }
     }
-
-    /*private void OnTriggerExit(Collider other)
-    {
-        if(other.gameObject == player)
-        {
-            Destroy(this.gameObject);
-        }
-    }*/
 
     private void OnDestroy()
     {
