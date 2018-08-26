@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         agent.isStopped = false;
         animator.SetBool("isOpen", false);

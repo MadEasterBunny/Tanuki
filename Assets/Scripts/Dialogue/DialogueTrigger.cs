@@ -22,6 +22,15 @@ public class DialogueTrigger : MonoBehaviour
         if(other.gameObject == player)
         {
             TriggerDialogue();
+            //Invoke("OnDestroy", 1f);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+         if(other.gameObject == player)
+        {
+            //TriggerDialogue();
             Invoke("OnDestroy", 1f);
         }
     }
