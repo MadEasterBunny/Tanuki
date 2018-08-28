@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CutsceneCamera : MonoBehaviour
 {
+    public GameObject dog;
 
 	
 	void Start ()
     {
-		
+        //FindObjectOfType<ControlledPatrolDog>().enabled = false;
 	}
 	
 	
