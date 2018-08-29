@@ -21,9 +21,13 @@ public class SideScrollerPlayerController : MonoBehaviour
     private Quaternion myRotation;
     private bool hasJumped;
 
+    //Animations
+    private Animator animator;
+
     void Start ()
     {
         myController = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
         myRotation = transform.rotation;
 	}
 	
@@ -89,6 +93,7 @@ public class SideScrollerPlayerController : MonoBehaviour
     void ApplySpeed()
     {
         myController.Move(transform.forward * forwardSpeed * Time.deltaTime);
+        animator.SetFloat("isWalking", myController.velocity.z);
         myController.Move(new Vector3(0, ySpeed, 0) * Time.deltaTime);
     }
 
