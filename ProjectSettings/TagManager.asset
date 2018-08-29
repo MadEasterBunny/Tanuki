@@ -13,6 +13,7 @@ TagManager:
   - ForestMonster
   - Dog Waypoint
   - Dog
+  - StolenGoods
   layers:
   - Default
   - TransparentFX

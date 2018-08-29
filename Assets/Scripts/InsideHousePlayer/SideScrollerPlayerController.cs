@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SideScrollerPlayerController : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class SideScrollerPlayerController : MonoBehaviour
 
     //Animations
     private Animator animator;
+
+    //Collectables
+    public Text goodsText;
+    private int stolenGoods;
 
     void Start ()
     {
@@ -129,6 +134,16 @@ public class SideScrollerPlayerController : MonoBehaviour
         if(myRotation != transform.rotation && myController.isGrounded)
         {
             transform.rotation = myRotation;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "StolenGoods")
+        {
+            stolenGoods++;
+            goodsText.text = "盗んだ物の数：" + stolenGoods.ToString();
+            Destroy(other.gameObject);
         }
     }
 }
