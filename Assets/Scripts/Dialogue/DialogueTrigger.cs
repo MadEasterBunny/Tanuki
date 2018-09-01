@@ -5,7 +5,12 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    public float dialogueWait;
     private GameObject player;
+
+    //Camera switch
+    public GameObject cam1;
+    //public GameObject cam2;
 
 	void Start ()
     {
@@ -21,7 +26,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(other.gameObject == player)
         {
-            TriggerDialogue();
+            StartCoroutine("DogCutscene");
+            Invoke("Dialogue", dialogueWait);   
             //Invoke("OnDestroy", 1f);
         }
     }
@@ -35,8 +41,20 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    void Dialogue()
+    {
+        TriggerDialogue();
+    }
+
     private void OnDestroy()
     {
         Destroy(this.gameObject);
+    }
+
+    IEnumerator DogCutscene()
+    {
+        cam1.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        cam1.SetActive(true);
     }
 }
