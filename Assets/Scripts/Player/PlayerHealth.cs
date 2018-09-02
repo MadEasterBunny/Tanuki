@@ -74,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
         player.transform.position = respawnPoint;
         health = 1;
         this.gameObject.SetActive(true);
+        player.tag = "Player";
         //fadeIn = true;
     }
 

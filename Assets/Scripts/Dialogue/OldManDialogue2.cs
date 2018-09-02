@@ -3,45 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class OldManDialogue : MonoBehaviour
+public class OldManDialogue2 : MonoBehaviour
 {
     private GameObject enemy;
-    public GameObject flowchart1Object;
-    //public GameObject flowchart2Object;
-
-    public Flowchart flowchart1;
+    public GameObject flowchart2Object;
+    //public GameObject flowchart3Object;
+    public Flowchart flowchart2;
 
     private GameObject player;
 
     private bool canRead;
     private bool readDialogue;
-    
-    //private bool canChange;
-
+    // Use this for initialization
     void Start ()
     {
         enemy = EnemyManager.instance.enemy.gameObject;
         player = PlayerManager.instance.player.gameObject;
-	}
+    }
 	
-	
-	void Update ()
-    {
-        
+	// Update is called once per frame
+	void Update () {
+		
 	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == player)
+        if (other.gameObject == player)
         {
             //canRead = false;
-            flowchart1.ExecuteBlock("Dialogue1");
+            flowchart2.ExecuteBlock("Dialogue2");
             //ReadDialogue();
-            readDialogue = true;
             if (readDialogue)
             {
                 Invoke("ChangeScripts", 3f);
-                //flowchart2Object.SetActive(true);
+                //flowchart3Object.SetActive(true);
             }
             readDialogue = false;
         }
@@ -63,7 +58,7 @@ public class OldManDialogue : MonoBehaviour
 
     void ChangeScripts()
     {
-        enemy.GetComponent<OldManDialogue>().enabled = false;
-        enemy.GetComponent<OldManDialogue2>().enabled = true;
+        enemy.GetComponent<OldManDialogue2>().enabled = false;
+        enemy.GetComponent<OldManDialogue3>().enabled = true;
     }
 }

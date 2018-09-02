@@ -3,45 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class OldManDialogue : MonoBehaviour
+public class OldManDialogue3 : MonoBehaviour
 {
     private GameObject enemy;
-    public GameObject flowchart1Object;
-    //public GameObject flowchart2Object;
 
-    public Flowchart flowchart1;
+    public GameObject gameManager;
+
+    //public GameObject flowchart3Object;
+    public Flowchart flowchart3;
+
+    public int enteredDialogue;
 
     private GameObject player;
 
     private bool canRead;
     private bool readDialogue;
-    
-    //private bool canChange;
-
+    // Use this for initialization
     void Start ()
     {
         enemy = EnemyManager.instance.enemy.gameObject;
         player = PlayerManager.instance.player.gameObject;
-	}
+    }
 	
-	
-	void Update ()
-    {
-        
-	}
+	// Update is called once per frame
+	void Update () {
+        CanChangeForm();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == player)
+        if (other.gameObject == player)
         {
             //canRead = false;
-            flowchart1.ExecuteBlock("Dialogue1");
+            flowchart3.ExecuteBlock("Dialogue3");
             //ReadDialogue();
-            readDialogue = true;
             if (readDialogue)
             {
-                Invoke("ChangeScripts", 3f);
-                //flowchart2Object.SetActive(true);
+                enteredDialogue += 1;
+                Invoke("StopScript", 3f);
+                //flowchart3Object.SetActive(false);
             }
             readDialogue = false;
         }
@@ -55,15 +55,22 @@ public class OldManDialogue : MonoBehaviour
         }
     }*/
 
+    void CanChangeForm()
+    {
+        if (enteredDialogue >= 1)
+        {
+            gameManager.GetComponent<UseLeaf>().enabled = true;
+        }
+    }
+
     /*IEnumerator ReadDialogue()
     {
         yield return new WaitForSeconds(3f);
         readDialogue = true;
     }*/
 
-    void ChangeScripts()
+    void StopScript()
     {
-        enemy.GetComponent<OldManDialogue>().enabled = false;
-        enemy.GetComponent<OldManDialogue2>().enabled = true;
+        enemy.GetComponent<OldManDialogue3>().enabled = false;
     }
 }
