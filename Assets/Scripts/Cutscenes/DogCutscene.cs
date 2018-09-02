@@ -38,7 +38,7 @@ public class DogCutscene : MonoBehaviour
     IEnumerator DogAnimation()
     {
         cam1.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         cam1.SetActive(true);
         /*animator.enabled = true;
         yield return new WaitForSeconds(1f);

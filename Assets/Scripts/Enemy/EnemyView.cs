@@ -62,6 +62,11 @@ public class EnemyView : MonoBehaviour
                 agent.speed = chaseSpeed;
             }
         }
+        else if(player.transform.tag == "Invisible")
+        {
+            spotLight.color = originalColor;
+            NormalPatrol();
+        }
         else
         {
             spotLight.color = originalColor;

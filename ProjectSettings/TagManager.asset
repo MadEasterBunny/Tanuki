@@ -14,6 +14,7 @@ TagManager:
   - Dog Waypoint
   - Dog
   - StolenGoods
+  - Invisible
   layers:
   - Default
   - TransparentFX

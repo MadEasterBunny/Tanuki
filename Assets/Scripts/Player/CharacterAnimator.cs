@@ -30,7 +30,7 @@ public class CharacterAnimator : MonoBehaviour
         float speedPercent = agent.velocity.magnitude / agent.speed;
         animator.SetFloat("speedPercent", speedPercent, locomotionAnimationSmoothTime, Time.deltaTime);
 
-        if (player.layer == 10)
+        if (player.tag == "Invisible")
         {
             hiding = true;
             if (speedPercent > 0.3f)
@@ -38,7 +38,7 @@ public class CharacterAnimator : MonoBehaviour
                 agent.speed = crawlSpeed;
                 animator.SetFloat("speedPercent", speedPercent, locomotionAnimationSmoothTime, Time.deltaTime);
             }
-            else 
+            else
             {
                 hiding = true;
             }
