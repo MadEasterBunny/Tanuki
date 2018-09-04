@@ -15,7 +15,6 @@ public class OldManDialogue : MonoBehaviour
     void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
-
 	}
 	
 	

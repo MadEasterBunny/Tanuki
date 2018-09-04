@@ -1,55 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
+using UnityEngine.AI;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTriggerDog : MonoBehaviour
 {
-    public Dialogue dialogue;
     public float dialogueWait;
     private GameObject player;
+    //public NavMeshAgent agent;
+
+    public Flowchart flowchart;
 
     //Camera switch
     public GameObject cam1;
     public GameObject cam2;
 
-	void Start ()
+    void Start()
     {
         player = PlayerManager.instance.player.gameObject;
-	}
-
-    public void TriggerDialogue()
-    {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == player)
+        if (other.gameObject == player)
         {
+            player.GetComponent<NavMeshAgent>().isStopped = true;
             StartCoroutine("DogCutscene");
-            Invoke("Dialogue", dialogueWait);   
-            //Invoke("OnDestroy", 1f);
+            Invoke("Dialogue", dialogueWait);
+            player.GetComponent<NavMeshAgent>().isStopped = false;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-         if(other.gameObject == player)
+        if (other.gameObject == player)
         {
-            //TriggerDialogue();
             Invoke("OnDestroy", 1f);
         }
     }
 
     void Dialogue()
     {
-        TriggerDialogue();
+        flowchart.ExecuteBlock("Dog Cutscene");
     }
 
     private void OnDestroy()
     {
+        cam2.SetActive(false);
         Destroy(this.gameObject);
-        Destroy(cam2);
     }
 
     IEnumerator DogCutscene()
