@@ -35,7 +35,7 @@ public class OldManDialogue2 : MonoBehaviour
             //ReadDialogue();
             if (readDialogue)
             {
-                Invoke("ChangeScripts", 3f);
+                Invoke("ChangeScripts", 10f);
                 //flowchart3Object.SetActive(true);
             }
             readDialogue = false;
@@ -58,7 +58,8 @@ public class OldManDialogue2 : MonoBehaviour
 
     void ChangeScripts()
     {
-        enemy.GetComponent<OldManDialogue2>().enabled = false;
         enemy.GetComponent<OldManDialogue3>().enabled = true;
+        flowchart2Object.SetActive(false);
+        enemy.GetComponent<OldManDialogue2>().enabled = false;   
     }
 }

@@ -9,7 +9,7 @@ public class OldManDialogue3 : MonoBehaviour
 
     public GameObject gameManager;
 
-    //public GameObject flowchart3Object;
+    public GameObject flowchart3Object;
     public Flowchart flowchart3;
 
     public int enteredDialogue;
@@ -40,7 +40,7 @@ public class OldManDialogue3 : MonoBehaviour
             if (readDialogue)
             {
                 enteredDialogue += 1;
-                Invoke("StopScript", 3f);
+                Invoke("StopScript", 10f);
                 //flowchart3Object.SetActive(false);
             }
             readDialogue = false;
@@ -71,6 +71,7 @@ public class OldManDialogue3 : MonoBehaviour
 
     void StopScript()
     {
+        flowchart3Object.SetActive(false);
         enemy.GetComponent<OldManDialogue3>().enabled = false;
     }
 }

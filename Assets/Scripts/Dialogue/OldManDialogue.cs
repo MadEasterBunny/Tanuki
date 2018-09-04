@@ -5,6 +5,8 @@ using Fungus;
 
 public class OldManDialogue : MonoBehaviour
 {
+    public GameObject gameManager;
+
     private GameObject enemy;
     public GameObject flowchart1Object;
     //public GameObject flowchart2Object;
@@ -13,7 +15,8 @@ public class OldManDialogue : MonoBehaviour
 
     private GameObject player;
 
-    private bool canRead;
+    public int enteredDialogue;
+
     private bool readDialogue;
     
     //private bool canChange;
@@ -22,13 +25,15 @@ public class OldManDialogue : MonoBehaviour
     {
         enemy = EnemyManager.instance.enemy.gameObject;
         player = PlayerManager.instance.player.gameObject;
+
 	}
 	
 	
 	void Update ()
     {
-        
-	}
+        CanChangeForm();
+        enteredDialogue = flowchart1.GetIntegerVariable("AllTalks");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -36,34 +41,24 @@ public class OldManDialogue : MonoBehaviour
         {
             //canRead = false;
             flowchart1.ExecuteBlock("Dialogue1");
-            //ReadDialogue();
+            flowchart1.SetBooleanVariable("FirstTalk", true);
             readDialogue = true;
-            if (readDialogue)
+            if(readDialogue)
             {
-                Invoke("ChangeScripts", 3f);
-                //flowchart2Object.SetActive(true);
+                //flowchart1.SetBooleanVariable("FirstTalk", false);
+                flowchart1.SetBooleanVariable("SecondTalk", true);
             }
-            readDialogue = false;
+            
         }
     }
 
-    /*private void OnTriggerExit(Collider other)
+    
+
+    void CanChangeForm()
     {
-        if (other.gameObject == player)
+        if (enteredDialogue >= 3)
         {
-            canRead = true;
+            gameManager.GetComponent<UseLeaf>().enabled = true;
         }
-    }*/
-
-    /*IEnumerator ReadDialogue()
-    {
-        yield return new WaitForSeconds(3f);
-        readDialogue = true;
-    }*/
-
-    void ChangeScripts()
-    {
-        enemy.GetComponent<OldManDialogue>().enabled = false;
-        enemy.GetComponent<OldManDialogue2>().enabled = true;
     }
 }
