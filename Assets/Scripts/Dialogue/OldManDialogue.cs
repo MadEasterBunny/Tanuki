@@ -5,21 +5,14 @@ using Fungus;
 
 public class OldManDialogue : MonoBehaviour
 {
-    public GameObject gameManager;
-
-    private GameObject enemy;
+    public GameObject gameManager; 
     public GameObject flowchart1Object;
-    //public GameObject flowchart2Object;
-
     public Flowchart flowchart1;
 
+    private GameObject enemy;
     private GameObject player;
 
     public int enteredDialogue;
-
-    private bool readDialogue;
-    
-    //private bool canChange;
 
     void Start ()
     {
@@ -39,20 +32,10 @@ public class OldManDialogue : MonoBehaviour
     {
         if(other.gameObject == player)
         {
-            //canRead = false;
             flowchart1.ExecuteBlock("Dialogue1");
             flowchart1.SetBooleanVariable("FirstTalk", true);
-            readDialogue = true;
-            if(readDialogue)
-            {
-                //flowchart1.SetBooleanVariable("FirstTalk", false);
-                flowchart1.SetBooleanVariable("SecondTalk", true);
-            }
-            
         }
     }
-
-    
 
     void CanChangeForm()
     {
