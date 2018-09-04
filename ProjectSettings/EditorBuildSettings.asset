@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 0a12947ad5737e648af519373331d825
+  - enabled: 1
+    path: Assets/Scenes/InsideTheHouse.unity
+    guid: eb325c97e792a1d4d81e46d6d13cfac2
   m_configObjects: {}

@@ -6,17 +6,14 @@ using Fungus;
 public class OldManDialogue : MonoBehaviour
 {
     public GameObject gameManager; 
-    public GameObject flowchart1Object;
     public Flowchart flowchart1;
 
-    private GameObject enemy;
     private GameObject player;
 
     public int enteredDialogue;
 
     void Start ()
     {
-        enemy = EnemyManager.instance.enemy.gameObject;
         player = PlayerManager.instance.player.gameObject;
 
 	}

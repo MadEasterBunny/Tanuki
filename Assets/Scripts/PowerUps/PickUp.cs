@@ -22,7 +22,8 @@ public class PickUp : MonoBehaviour
         if(other.tag == "Player")
         {
             leafButton.SetActive(true);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
         }
     }
 }

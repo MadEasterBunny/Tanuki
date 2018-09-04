@@ -12,11 +12,18 @@ public class UseLeaf : MonoBehaviour
     public GameObject otherGFX;
     public GameObject leafButton;
 
+    public GameObject leaf;
+    //public GameObject leafPrefab;
+    //private Vector3 leafLocation;
+    //private Quaternion leafRoatation;
+
 	// Use this for initialization
 	void Start ()
     {
         player = PlayerManager.instance.player.transform;
         enemy = EnemyManager.instance.enemy.transform;
+        //leafLocation = leaf.transform.position;
+        //leafRoatation = leaf.transform.localRotation;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +36,8 @@ public class UseLeaf : MonoBehaviour
     {
         OtherForm();
         Invoke("Tanuki", 15);
+        leaf.SetActive(true);
+        //Instantiate(leafPrefab, leafLocation, leafRoatation);
     }
 
     public void Tanuki()

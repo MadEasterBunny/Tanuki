@@ -9,7 +9,12 @@ public class EnemyFlee : MonoBehaviour
     private Transform player;
 
     public float enemyRunDistance = 4.0f;
+    public float keyDropDistance = 5.0f;
     public float fleeSpeed = 8f;
+
+    public GameObject key;
+
+    private bool keyDropped;
 	// Use this for initialization
 	void Start ()
     {
@@ -31,6 +36,15 @@ public class EnemyFlee : MonoBehaviour
             if(agent.speed > fleeSpeed)
             {
                 agent.speed = fleeSpeed;
+            }
+        }
+
+        if(distance >= keyDropDistance)
+        {
+            if (!keyDropped)
+            {
+                Instantiate(key, transform.position, transform.rotation);
+                keyDropped = true;
             }
         }
 	}
