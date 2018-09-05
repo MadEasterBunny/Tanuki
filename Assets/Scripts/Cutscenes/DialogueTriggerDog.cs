@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
-using UnityEngine.AI;
 
 public class DialogueTriggerDog : MonoBehaviour
 {
     public float dialogueWait;
     private GameObject player;
-    //public NavMeshAgent agent;
 
     public Flowchart flowchart;
 
@@ -43,7 +41,6 @@ public class DialogueTriggerDog : MonoBehaviour
     void Dialogue()
     {
         flowchart.ExecuteBlock("Dog Cutscene");
-        //player.GetComponent<NavMeshAgent>().isStopped = false;
     }
 
     private void OnDestroy()
@@ -54,7 +51,6 @@ public class DialogueTriggerDog : MonoBehaviour
 
     IEnumerator DogCutscene()
     {
-        //player.GetComponent<NavMeshAgent>().isStopped = true;
         cam1.SetActive(false);
         yield return new WaitForSeconds(5f);
         cam1.SetActive(true);

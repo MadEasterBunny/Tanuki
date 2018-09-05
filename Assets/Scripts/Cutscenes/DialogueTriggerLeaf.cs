@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class DialogueTriggerOldMan : MonoBehaviour
+public class DialogueTriggerLeaf : MonoBehaviour
 {
     public float dialogueWait;
     private GameObject player;
@@ -14,12 +14,10 @@ public class DialogueTriggerOldMan : MonoBehaviour
 
     //Camera switch
     public GameObject cam1;
-    public GameObject cam3;
 
     void Start()
     {
         player = PlayerManager.instance.player.gameObject;
-        enemy = EnemyManager.instance.enemy.gameObject;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,8 +25,8 @@ public class DialogueTriggerOldMan : MonoBehaviour
         if (other.gameObject == player)
         {
             player.GetComponent<PlayerController>().enabled = false;
-            enemy.GetComponent<EnemyView>().enabled = false;
-            StartCoroutine("OldManCutscene");
+            OldManDialogue.foundLeaf = true;
+            StartCoroutine("LeafCutscene");
             Invoke("Dialogue", dialogueWait);
         }
     }
@@ -37,15 +35,13 @@ public class DialogueTriggerOldMan : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            cam3.SetActive(false);
-            enemy.GetComponent<EnemyView>().enabled = true;
             Invoke("OnDestroy", 1f);
         }
     }
 
     void Dialogue()
     {
-        flowchart.ExecuteBlock("Spotted Old Man");
+        flowchart.ExecuteBlock("Leaf Block");
     }
 
     private void OnDestroy()
@@ -53,7 +49,7 @@ public class DialogueTriggerOldMan : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    IEnumerator OldManCutscene()
+    IEnumerator LeafCutscene()
     {
         cam1.SetActive(false);
         yield return new WaitForSeconds(5f);

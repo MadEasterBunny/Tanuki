@@ -12,6 +12,8 @@ public class OldManDialogue : MonoBehaviour
 
     public int enteredDialogue;
 
+    public static bool foundLeaf;
+
     void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
@@ -26,7 +28,7 @@ public class OldManDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == player)
+        if(other.gameObject == player && foundLeaf)
         {
             flowchart1.ExecuteBlock("Dialogue1");
             flowchart1.SetBooleanVariable("FirstTalk", true);
