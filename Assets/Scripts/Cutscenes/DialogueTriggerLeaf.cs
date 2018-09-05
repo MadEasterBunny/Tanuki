@@ -25,7 +25,6 @@ public class DialogueTriggerLeaf : MonoBehaviour
         if (other.gameObject == player)
         {
             player.GetComponent<PlayerController>().enabled = false;
-            OldManDialogue.foundLeaf = true;
             StartCoroutine("LeafCutscene");
             Invoke("Dialogue", dialogueWait);
         }
@@ -35,6 +34,7 @@ public class DialogueTriggerLeaf : MonoBehaviour
     {
         if (other.gameObject == player)
         {
+            OldManDialogue.foundLeaf = true;
             Invoke("OnDestroy", 1f);
         }
     }
