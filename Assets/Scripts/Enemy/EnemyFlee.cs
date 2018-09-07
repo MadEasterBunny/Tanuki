@@ -37,14 +37,14 @@ public class EnemyFlee : MonoBehaviour
             {
                 agent.speed = fleeSpeed;
             }
-        }
 
-        if(distance >= keyDropDistance)
-        {
-            if (!keyDropped)
+            if (transform.position == newPos)
             {
-                Instantiate(key, transform.position, transform.rotation);
-                keyDropped = true;
+                if (!keyDropped)
+                {
+                    Instantiate(key, transform.position, transform.rotation);
+                    keyDropped = true;
+                }
             }
         }
 	}
