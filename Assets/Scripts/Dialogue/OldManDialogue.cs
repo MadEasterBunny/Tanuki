@@ -5,8 +5,10 @@ using Fungus;
 
 public class OldManDialogue : MonoBehaviour
 {
-    public GameObject gameManager; 
+    public GameObject gameManager;
+    public Collider dialogueTrigger;
     public Flowchart flowchart1;
+    //public Flowchart flowchart2;
 
     private GameObject player;
 
@@ -17,6 +19,7 @@ public class OldManDialogue : MonoBehaviour
     void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
+        dialogueTrigger = this.GetComponent<SphereCollider>();
 	}
 	
 	
@@ -39,7 +42,10 @@ public class OldManDialogue : MonoBehaviour
     {
         if (enteredDialogue >= 3)
         {
+            flowchart1.ExecuteBlock("Tanuki");
             gameManager.GetComponent<UseLeaf>().enabled = true;
+            dialogueTrigger.enabled = false;
+            
         }
     }
 }

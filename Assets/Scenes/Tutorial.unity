@@ -42525,7 +42525,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2bee4a94fea422b429db044200487008, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -42813,7 +42813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunDistance: 10
-  keyDropDistance: 5
   fleeSpeed: 10
   key: {fileID: 1236937599289478, guid: f980a6729490e37429a55fb7c6e025dd, type: 2}
 --- !u!54 &974006451
@@ -42949,6 +42948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 486714545}
+  dialogueTrigger: {fileID: 974006458}
   flowchart1: {fileID: 1288227278}
   enteredDialogue: 0
 --- !u!1 &992914515
@@ -43914,7 +43914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1012094034}
+  selectedFlowchart: {fileID: 1288227278}
 --- !u!4 &1168333970
 Transform:
   m_ObjectHideFlags: 1
@@ -44298,6 +44298,10 @@ GameObject:
   - component: {fileID: 1288227295}
   - component: {fileID: 1288227294}
   - component: {fileID: 1288227297}
+  - component: {fileID: 1288227300}
+  - component: {fileID: 1288227299}
+  - component: {fileID: 1288227298}
+  - component: {fileID: 1288227301}
   m_Layer: 0
   m_Name: FlowchartOldMan
   m_TagString: Untagged
@@ -44318,7 +44322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 701.83075, y: -7.8561554}
+  scrollPos: {x: 673.42163, y: -29.447065}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -44330,8 +44334,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1288227279}
-  selectedCommands: []
+  - {fileID: 1288227300}
+  selectedCommands:
+  - {fileID: 1288227301}
   variables:
   - {fileID: 1288227284}
   - {fileID: 1288227283}
@@ -44361,7 +44366,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 69.27272
-    y: 70
+    y: 71.13635
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -45001,6 +45006,98 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1288227298
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288227277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  storyText: "\u25CB\u25CB\u306B\u306A\u308D\u3046\uFF01\uFF01\uFF01"
+  description: 
+  character: {fileID: 124402420}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 809774316}
+--- !u!114 &1288227299
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288227277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 0
+  storyText: "\u3088\u3063\u3057\u3083\uFF01\r\n"
+  description: 
+  character: {fileID: 124402420}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 809774316}
+--- !u!114 &1288227300
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288227277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 241.54541
+    y: 72.27273
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 22
+  blockName: Tanuki
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1288227299}
+  - {fileID: 1288227298}
+  - {fileID: 1288227301}
+--- !u!114 &1288227301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288227277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1ca510a57aa47568a5e4ee558ff41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
 --- !u!4 &1303861553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438454, guid: 124e5e8b78eea664cb0189cae723d1c3,
@@ -46415,7 +46512,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549556361}
-  m_LocalRotation: {x: 0.09157794, y: -0.51604545, z: 0.055614118, w: 0.84983397}
+  m_LocalRotation: {x: 0.09158803, y: -0.5160458, z: 0.055620816, w: 0.84983224}
   m_LocalPosition: {x: 86.44, y: 13.25, z: 425.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -46470,7 +46567,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunDistance: 10
-  keyDropDistance: 5
   fleeSpeed: 10
   key: {fileID: 0}
 --- !u!114 &1567245326
@@ -47194,7 +47290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRunDistance: 10
-  keyDropDistance: 5
   fleeSpeed: 10
   key: {fileID: 0}
 --- !u!114 &1725932560

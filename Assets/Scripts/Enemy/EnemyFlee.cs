@@ -9,8 +9,8 @@ public class EnemyFlee : MonoBehaviour
     private Transform player;
 
     public float enemyRunDistance = 4.0f;
-    public float keyDropDistance = 5.0f;
-    public float fleeSpeed = 8f;
+    //public float keyDropDistance = 5.0f;
+    public float fleeSpeed = 10f;
 
     public GameObject key;
 
@@ -38,7 +38,7 @@ public class EnemyFlee : MonoBehaviour
                 agent.speed = fleeSpeed;
             }
 
-            if (transform.position == newPos)
+            if (agent.speed == fleeSpeed)
             {
                 if (!keyDropped)
                 {
