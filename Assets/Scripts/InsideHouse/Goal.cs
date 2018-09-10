@@ -30,10 +30,13 @@ public class Goal : MonoBehaviour
             player.GetComponent<SideScrollerPlayerController>().enabled = false;
             flowchart1.ExecuteBlock("ToOutro");
             //Fix this below
-            if (flowchart1.GetBooleanVariable("FadeDone"))
-            {
-                SceneManager.LoadScene(4);
-            }
+            StartCoroutine("LoadScene");
         }
+    }
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene(4);
     }
 }
