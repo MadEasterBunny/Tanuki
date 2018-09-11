@@ -7,6 +7,8 @@ public class DialogueTriggerOldMan : MonoBehaviour
 {
     public float dialogueWait;
     private GameObject player;
+    public GameObject dog1;
+    public GameObject dog2;
 
     public Flowchart flowchart;
 
@@ -28,6 +30,8 @@ public class DialogueTriggerOldMan : MonoBehaviour
         {
             player.GetComponent<PlayerController>().enabled = false;
             enemy.GetComponent<EnemyView>().enabled = false;
+            dog1.GetComponent<DogView>().enabled = false;
+            dog2.GetComponent<DogView>().enabled = false;
             StartCoroutine("OldManCutscene");
             Invoke("Dialogue", dialogueWait);
         }

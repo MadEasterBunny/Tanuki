@@ -7726,6 +7726,7 @@ GameObject:
   - component: {fileID: 2133443584}
   - component: {fileID: 2133443586}
   - component: {fileID: 2133443587}
+  - component: {fileID: 2133443582}
   m_Layer: 0
   m_Name: Flowchart Start Stealing
   m_TagString: Untagged
@@ -7759,7 +7760,9 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2133443583}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 2133443582}
+  - {fileID: 0}
   variables: []
   description: 
   stepPause: 0
@@ -7771,6 +7774,23 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &2133443582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133443580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
 --- !u!114 &2133443583
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7785,7 +7805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68
+    x: 69
     y: 69
     width: 120
     height: 40
@@ -7796,6 +7816,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 2133443586}
   commandList:
+  - {fileID: 2133443582}
   - {fileID: 2133443587}
   - {fileID: 2133443584}
 --- !u!114 &2133443584
