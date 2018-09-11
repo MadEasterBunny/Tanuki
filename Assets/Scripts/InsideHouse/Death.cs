@@ -6,11 +6,15 @@ public class Death : MonoBehaviour
 {
     private GameObject player;
     private Vector3 respawnPoint;
+
+    public Camera mainCamera;
+    private Vector3 cameraRespawnPoint;
 	
 	void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
         respawnPoint = player.transform.position;
+        cameraRespawnPoint = mainCamera.transform.position;
 	}
 	
 
@@ -23,9 +27,16 @@ public class Death : MonoBehaviour
     {
         if(other.gameObject == player)
         {
-            player.gameObject.SetActive(false);
-            player.transform.position = respawnPoint;
-            player.gameObject.SetActive(true);
+            StartCoroutine("Respawn");
         }
+    }
+
+    IEnumerator Respawn()
+    {
+        player.gameObject.SetActive(false);
+        yield return new WaitForSeconds(3f);
+        player.transform.position = respawnPoint;
+        mainCamera.transform.position = cameraRespawnPoint;
+        player.gameObject.SetActive(true);
     }
 }
