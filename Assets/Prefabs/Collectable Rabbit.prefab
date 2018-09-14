@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33699767724729854}
   - component: {fileID: 23101044435718154}
   - component: {fileID: 135226021454773342}
-  - component: {fileID: 114205460177156442}
+  - component: {fileID: 114862627622007826}
   m_Layer: 0
   m_Name: Collectable Rabbit
   m_TagString: StolenGoods
@@ -158,17 +158,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102326907166372}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114205460177156442
+--- !u!114 &114862627622007826
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102326907166372}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd77d7eee05011b43935e25da4ec45ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectablesCounter: {fileID: 0}
   goodsText: {fileID: 0}
   pickUpSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
 --- !u!135 &135226021454773342

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33392749951658146}
   - component: {fileID: 23537162083555956}
   - component: {fileID: 135475684393377746}
-  - component: {fileID: 114067384645871498}
+  - component: {fileID: 114971188784134102}
   m_Layer: 0
   m_Name: Collectable Bell
   m_TagString: StolenGoods
@@ -158,17 +158,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1872355792297738}
   m_Mesh: {fileID: 4300006, guid: 2c51d79618e46cf4689e43cdedeceb2c, type: 3}
---- !u!114 &114067384645871498
+--- !u!114 &114971188784134102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1746562240601750}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd77d7eee05011b43935e25da4ec45ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectablesCounter: {fileID: 0}
   goodsText: {fileID: 0}
   pickUpSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
 --- !u!135 &135475684393377746

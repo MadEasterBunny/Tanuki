@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33872047330888226}
   - component: {fileID: 23763614499710912}
   - component: {fileID: 135833040530454448}
-  - component: {fileID: 114143042481652444}
+  - component: {fileID: 114183937064506748}
   m_Layer: 0
   m_Name: Collectable Snowman
   m_TagString: StolenGoods
@@ -335,17 +335,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022522472395912}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114143042481652444
+--- !u!114 &114183937064506748
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022522472395912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd77d7eee05011b43935e25da4ec45ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectablesCounter: {fileID: 0}
   goodsText: {fileID: 0}
   pickUpSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
 --- !u!135 &135833040530454448

@@ -150,10 +150,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4939747454590824, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 114937298052705238, guid: cb513970a405c6e4baffd0370e57db9e,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -161,6 +160,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Penguine (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
   m_IsPrefabAsset: 0
@@ -203,7 +212,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -316,7 +330,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114022610475117172, guid: 8544e48817899854193dcdfdeab9f24a,
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -620,8 +639,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114937298052705238, guid: cb513970a405c6e4baffd0370e57db9e,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -629,6 +647,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Penguine (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
   m_IsPrefabAsset: 0
@@ -764,10 +792,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4278089239360574, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
       propertyPath: m_RootOrder
-      value: 47
+      value: 41
       objectReference: {fileID: 0}
-    - target: {fileID: 114022610475117172, guid: 8544e48817899854193dcdfdeab9f24a,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -775,6 +802,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Pig (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
   m_IsPrefabAsset: 0
@@ -977,10 +1014,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4373565597896612, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 114931922059900552, guid: ffb31a670ad47cc4c86b951eed76a6ac,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -988,6 +1024,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bear (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
   m_IsPrefabAsset: 0
@@ -1290,7 +1336,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -1631,10 +1682,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4526593926221624, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
       propertyPath: m_RootOrder
-      value: 42
+      value: 38
       objectReference: {fileID: 0}
-    - target: {fileID: 114884439245510624, guid: 509cf295521fd2a46b0e0e3f7530650b,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -1642,6 +1692,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Sheep (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
   m_IsPrefabAsset: 0
@@ -1699,7 +1759,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114931922059900552, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -1744,10 +1809,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4412957779236738, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 114005555625149694, guid: 429d8183d136ad04dbba1a0e48e80c56,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -1755,6 +1819,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Monkey (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
   m_IsPrefabAsset: 0
@@ -1887,8 +1961,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 114022610475117172, guid: 8544e48817899854193dcdfdeab9f24a,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -1896,6 +1969,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Pig (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
   m_IsPrefabAsset: 0
@@ -2156,10 +2239,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4474421027047238, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2167,6 +2249,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bell (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
   m_IsPrefabAsset: 0
@@ -2311,10 +2403,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4278089239360574, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: 114022610475117172, guid: 8544e48817899854193dcdfdeab9f24a,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2322,6 +2413,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Pig (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
   m_IsPrefabAsset: 0
@@ -2367,10 +2468,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4474421027047238, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
       propertyPath: m_RootOrder
-      value: 35
+      value: 31
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2378,6 +2478,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bell (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
   m_IsPrefabAsset: 0
@@ -2423,10 +2533,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4939747454590824, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 114937298052705238, guid: cb513970a405c6e4baffd0370e57db9e,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2434,6 +2543,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Penguine (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
   m_IsPrefabAsset: 0
@@ -2479,10 +2598,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277771532400042, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 36
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2490,6 +2608,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Snowman (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
   m_IsPrefabAsset: 0
@@ -2658,10 +2786,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277771532400042, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2669,6 +2796,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Snowman (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
   m_IsPrefabAsset: 0
@@ -2800,8 +2937,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2809,6 +2945,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bell (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
   m_IsPrefabAsset: 0
@@ -2856,8 +3002,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114205460177156442, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2865,6 +3010,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Rabbit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
   m_IsPrefabAsset: 0
@@ -2912,8 +3067,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 114884439245510624, guid: 509cf295521fd2a46b0e0e3f7530650b,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -2921,6 +3075,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Sheep (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
   m_IsPrefabAsset: 0
@@ -3228,10 +3392,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4415366262287088, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 37
       objectReference: {fileID: 0}
-    - target: {fileID: 114205460177156442, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3239,6 +3402,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Rabbit (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
   m_IsPrefabAsset: 0
@@ -3284,10 +3457,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4474421027047238, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3295,6 +3467,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bell (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
   m_IsPrefabAsset: 0
@@ -3427,8 +3609,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114931922059900552, guid: ffb31a670ad47cc4c86b951eed76a6ac,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3436,6 +3617,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
   m_IsPrefabAsset: 0
@@ -3743,7 +3934,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114937298052705238, guid: cb513970a405c6e4baffd0370e57db9e,
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -3793,10 +3989,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4373565597896612, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
       propertyPath: m_RootOrder
-      value: 38
+      value: 32
       objectReference: {fileID: 0}
-    - target: {fileID: 114931922059900552, guid: ffb31a670ad47cc4c86b951eed76a6ac,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3804,6 +3999,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bear (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
   m_IsPrefabAsset: 0
@@ -3849,10 +4054,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4526593926221624, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
       propertyPath: m_RootOrder
-      value: 33
+      value: 29
       objectReference: {fileID: 0}
-    - target: {fileID: 114884439245510624, guid: 509cf295521fd2a46b0e0e3f7530650b,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3860,6 +4064,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Sheep (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
   m_IsPrefabAsset: 0
@@ -3900,10 +4114,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4415366262287088, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
       propertyPath: m_RootOrder
-      value: 32
+      value: 28
       objectReference: {fileID: 0}
-    - target: {fileID: 114205460177156442, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -3911,6 +4124,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Rabbit (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
   m_IsPrefabAsset: 0
@@ -4043,7 +4266,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114205460177156442, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -4350,8 +4578,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -4359,6 +4586,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Snowman (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
   m_IsPrefabAsset: 0
@@ -4404,10 +4641,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4939747454590824, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
       propertyPath: m_RootOrder
-      value: 39
+      value: 34
       objectReference: {fileID: 0}
-    - target: {fileID: 114937298052705238, guid: cb513970a405c6e4baffd0370e57db9e,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -4415,6 +4651,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Penguine (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114795473390587546, guid: cb513970a405c6e4baffd0370e57db9e,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb513970a405c6e4baffd0370e57db9e, type: 2}
   m_IsPrefabAsset: 0
@@ -4829,6 +5075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421475429}
+  - component: {fileID: 1421475430}
   m_Layer: 0
   m_Name: Collectables
   m_TagString: Untagged
@@ -4891,6 +5138,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1421475430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421475428}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd77d7eee05011b43935e25da4ec45ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectablesCounter: {fileID: 1421475428}
+  goodsText: {fileID: 1499487999}
+  pickUpSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
 --- !u!1 &1446739399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5013,10 +5274,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4526593926221624, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
-    - target: {fileID: 114884439245510624, guid: 509cf295521fd2a46b0e0e3f7530650b,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5024,6 +5284,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Sheep (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509cf295521fd2a46b0e0e3f7530650b, type: 2}
   m_IsPrefabAsset: 0
@@ -5131,10 +5401,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277771532400042, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
       propertyPath: m_RootOrder
-      value: 34
+      value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5142,6 +5411,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Snowman (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
   m_IsPrefabAsset: 0
@@ -5184,8 +5463,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114005555625149694, guid: 429d8183d136ad04dbba1a0e48e80c56,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5193,6 +5471,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Monkey (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
   m_IsPrefabAsset: 0
@@ -5238,10 +5526,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4373565597896612, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 114931922059900552, guid: ffb31a670ad47cc4c86b951eed76a6ac,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5249,6 +5536,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bear (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114066243437865050, guid: ffb31a670ad47cc4c86b951eed76a6ac,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb31a670ad47cc4c86b951eed76a6ac, type: 2}
   m_IsPrefabAsset: 0
@@ -5364,10 +5661,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4278089239360574, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
       propertyPath: m_RootOrder
-      value: 31
+      value: 27
       objectReference: {fileID: 0}
-    - target: {fileID: 114022610475117172, guid: 8544e48817899854193dcdfdeab9f24a,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5375,6 +5671,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Pig (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114845797315481696, guid: 8544e48817899854193dcdfdeab9f24a,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8544e48817899854193dcdfdeab9f24a, type: 2}
   m_IsPrefabAsset: 0
@@ -5415,10 +5721,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4412957779236738, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 114005555625149694, guid: 429d8183d136ad04dbba1a0e48e80c56,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -5426,6 +5731,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Monkey (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
   m_IsPrefabAsset: 0
@@ -6004,10 +6319,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4474421027047238, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 33
       objectReference: {fileID: 0}
-    - target: {fileID: 114067384645871498, guid: fc967c3f1ce40134099df29007e144b5,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -6015,6 +6329,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Bell (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114971188784134102, guid: fc967c3f1ce40134099df29007e144b5,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc967c3f1ce40134099df29007e144b5, type: 2}
   m_IsPrefabAsset: 0
@@ -6346,10 +6670,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4277771532400042, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
       propertyPath: m_RootOrder
-      value: 43
+      value: 39
       objectReference: {fileID: 0}
-    - target: {fileID: 114143042481652444, guid: bb8d73e6b4be10444a44f581a09d3793,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -6357,6 +6680,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Snowman (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114183937064506748, guid: bb8d73e6b4be10444a44f581a09d3793,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb8d73e6b4be10444a44f581a09d3793, type: 2}
   m_IsPrefabAsset: 0
@@ -7035,7 +7368,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114005555625149694, guid: 429d8183d136ad04dbba1a0e48e80c56,
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
         type: 2}
       propertyPath: goodsText
       value: 
@@ -7444,10 +7782,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4412957779236738, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
       propertyPath: m_RootOrder
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 114005555625149694, guid: 429d8183d136ad04dbba1a0e48e80c56,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -7455,6 +7792,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Monkey (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114875341466870240, guid: 429d8183d136ad04dbba1a0e48e80c56,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429d8183d136ad04dbba1a0e48e80c56, type: 2}
   m_IsPrefabAsset: 0
@@ -7693,10 +8040,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4415366262287088, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114205460177156442, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: goodsText
       value: 
       objectReference: {fileID: 1499487999}
@@ -7704,6 +8050,16 @@ Prefab:
       propertyPath: m_Name
       value: Collectable Rabbit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114862627622007826, guid: 81b8f72d7ff59af4abd1ddb871292eb3,
+        type: 2}
+      propertyPath: goodsText
+      value: 
+      objectReference: {fileID: 1499487999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b8f72d7ff59af4abd1ddb871292eb3, type: 2}
   m_IsPrefabAsset: 0
@@ -7975,7 +8331,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114884439245510624, guid: 509cf295521fd2a46b0e0e3f7530650b,
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
+        type: 2}
+      propertyPath: collectablesCounter
+      value: 
+      objectReference: {fileID: 1421475428}
+    - target: {fileID: 114396026525342410, guid: 509cf295521fd2a46b0e0e3f7530650b,
         type: 2}
       propertyPath: goodsText
       value: 
