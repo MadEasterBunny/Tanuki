@@ -6,6 +6,7 @@ public class KeyPickUp : MonoBehaviour
 {
     private GameObject player;
     public float keyRotationSpeed;
+    public AudioClip keyPickup;
 	
 	void Start ()
     {
@@ -22,6 +23,7 @@ public class KeyPickUp : MonoBehaviour
     {
         if(other.gameObject == player)
         {
+            AudioSource.PlayClipAtPoint(keyPickup, player.transform.position);
             HouseDoor.hasKey = true;
             Destroy(this.gameObject);
         }

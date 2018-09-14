@@ -10,7 +10,7 @@ public class CollectableGoods : MonoBehaviour
     public static int stolenGoods;
 
     //private AudioSource pickUpSound;
-    public AudioClip pickUpSoundEffect;
+    public AudioClip pickupSoundEffect;
 
     void Start ()
     {
@@ -27,7 +27,7 @@ public class CollectableGoods : MonoBehaviour
     {
         if(other.transform.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(pickUpSoundEffect, transform.position, 0.5f);
+            AudioSource.PlayClipAtPoint(pickupSoundEffect, transform.position, 0.5f);
             stolenGoods++;
             goodsText.text = "盗んだ物の数：" + stolenGoods.ToString();
             PlayerPrefs.SetInt("Score", stolenGoods);

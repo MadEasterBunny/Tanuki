@@ -8,6 +8,7 @@ public class Death : MonoBehaviour
     private Vector3 respawnPoint;
 
     public Camera mainCamera;
+    public ParticleSystem deathEffect;
     private Vector3 cameraRespawnPoint;
 	
 	void Start ()
@@ -20,8 +21,8 @@ public class Death : MonoBehaviour
 
 	void Update ()
     {
-		
-	}
+        deathEffect.transform.position = player.transform.position;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -34,6 +35,7 @@ public class Death : MonoBehaviour
     IEnumerator Respawn()
     {
         player.gameObject.SetActive(false);
+        deathEffect.Play();
         yield return new WaitForSeconds(3f);
         player.transform.position = respawnPoint;
         mainCamera.transform.position = cameraRespawnPoint;

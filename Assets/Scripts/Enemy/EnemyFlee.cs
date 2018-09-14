@@ -9,20 +9,18 @@ public class EnemyFlee : MonoBehaviour
     private Transform player;
 
     public float enemyRunDistance = 4.0f;
-    //public float keyDropDistance = 5.0f;
     public float fleeSpeed = 10f;
 
     public GameObject key;
 
     private bool keyDropped;
-	// Use this for initialization
+
 	void Start ()
     {
         player = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
         float distance = Vector3.Distance(transform.position, player.position);
