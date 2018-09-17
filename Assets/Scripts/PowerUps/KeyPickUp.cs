@@ -23,8 +23,9 @@ public class KeyPickUp : MonoBehaviour
     {
         if(other.gameObject == player)
         {
-            AudioSource.PlayClipAtPoint(keyPickup, player.transform.position);
+            AudioSource.PlayClipAtPoint(keyPickup, player.transform.position, 0.5f);
             HouseDoor.hasKey = true;
+            DoorEnterDialogue.doorDialogue = true;
             Destroy(this.gameObject);
         }
     }

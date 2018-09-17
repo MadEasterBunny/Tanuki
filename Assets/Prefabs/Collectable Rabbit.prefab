@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102326907166372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.022071838, y: 0.7134509, z: 6.968982}
+  m_LocalPosition: {x: 0.022071838, y: 5.18, z: 315.17}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4732257937951242}
@@ -171,7 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectablesCounter: {fileID: 0}
   goodsText: {fileID: 0}
-  pickUpSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
+  audioSource: {fileID: 0}
+  pickupSoundEffect: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
 --- !u!135 &135226021454773342
 SphereCollider:
   m_ObjectHideFlags: 1

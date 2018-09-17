@@ -30,11 +30,16 @@ public class SideScrollerPlayerController : MonoBehaviour
     public Text goodsText;
     private int stolenGoods;
 
+    //Jump Sound Effect
+    private AudioSource audioSouce;
+    public AudioClip jumpEffect;
+
     void Start ()
     {
         myController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
         myRotation = transform.rotation;
+        audioSouce = GetComponent<AudioSource>();
 	}
 	
 	
@@ -67,6 +72,7 @@ public class SideScrollerPlayerController : MonoBehaviour
             if (myController.isGrounded && !hasJumped)
             {
                 hasJumped = true;
+                audioSouce.PlayOneShot(jumpEffect, 0.2f);
                 hangTimer = hangTime;
                 ySpeed = jumpForce;
             }
@@ -116,6 +122,7 @@ public class SideScrollerPlayerController : MonoBehaviour
             if(Input.GetButton("Fire1") && !hasJumped)
             {
                 hasJumped = true;
+                audioSouce.PlayOneShot(jumpEffect, 0.2f);
                 //Makes character change direction of hit wall
                 transform.forward = hitSent.normal;
                 transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y, 0));

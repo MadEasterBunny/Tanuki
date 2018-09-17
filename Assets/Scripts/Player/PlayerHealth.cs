@@ -14,43 +14,20 @@ public class PlayerHealth : MonoBehaviour
 
     public ParticleSystem deathEffect;
 
-    //public Image fadeScreen;
-    //private bool fadeOut;
-    //private bool fadeIn;
-    //public float fadeSpeed;
-    //public float waitForFade;
+    public AudioSource audioSource;
+    public AudioClip deathSoundDog;
+    public AudioClip deathSoundMan;
 
-
-	// Use this for initialization
 	void Start ()
     {
         player = PlayerManager.instance.player.gameObject;
         respawnPoint = player.transform.position;
-        
+        //audioSource = GetComponent<AudioSource>();
     }
 	
-	// Update is called once per frame
 	void Update ()
     {
         deathEffect.transform.position = player.transform.position;
-
-        /*if(fadeOut)
-        {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
-            if(fadeScreen.color.a == 1f)
-            {
-                fadeOut = false;
-            }
-        }
-
-        if (fadeIn)
-        {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
-            if (fadeScreen.color.a == 0f)
-            {
-                fadeIn = false;
-            }
-        }*/
     }
 
     void CollidedWithEnemy(EnemyAttack enemy)
@@ -58,7 +35,10 @@ public class PlayerHealth : MonoBehaviour
         enemy.Attack(this);
         if(health <= 0)
         {
-            PlayerDead();
+            if (enemy.tag == "Dog")
+                PlayerDeadDog();
+            else
+                PlayerDeadMan();
             Invoke("Respawn", 3);
         }
     }
@@ -75,28 +55,19 @@ public class PlayerHealth : MonoBehaviour
         health = 1;
         this.gameObject.SetActive(true);
         player.tag = "Player";
-        //fadeIn = true;
     }
 
-    void PlayerDead()
+    void PlayerDeadDog()
     { 
         deathEffect.Play();
+        audioSource.PlayOneShot(deathSoundDog, 0.7f);
         this.gameObject.SetActive(false);
-        //fadeOut = true;
     }
 
-    /*IEnumerator RespawnCo()
+    void PlayerDeadMan()
     {
         deathEffect.Play();
+        audioSource.PlayOneShot(deathSoundMan, 0.7f);
         this.gameObject.SetActive(false);
-        fadeOut = true;
-
-        yield return new WaitForSeconds(respawnLength);
-
-        fadeIn = true;
-
-        this.gameObject.SetActive(true);
-        player.transform.position = respawnPoint;
-        health = 1;
-    }*/
+    }
 }

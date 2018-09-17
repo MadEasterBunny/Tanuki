@@ -10,6 +10,9 @@ public class Death : MonoBehaviour
     public Camera mainCamera;
     public ParticleSystem deathEffect;
     private Vector3 cameraRespawnPoint;
+
+    public AudioSource audioSource;
+    public AudioClip deathSound;
 	
 	void Start ()
     {
@@ -36,6 +39,7 @@ public class Death : MonoBehaviour
     {
         player.gameObject.SetActive(false);
         deathEffect.Play();
+        audioSource.PlayOneShot(deathSound, 0.7f);
         yield return new WaitForSeconds(3f);
         player.transform.position = respawnPoint;
         mainCamera.transform.position = cameraRespawnPoint;

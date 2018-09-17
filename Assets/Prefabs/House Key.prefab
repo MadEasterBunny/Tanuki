@@ -169,7 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyRotationSpeed: 50
-  keyPickup: {fileID: 8300000, guid: 243155907fdbe424d8f5ae012c4314fc, type: 3}
+  keyPickup: {fileID: 8300000, guid: 4d684ba1030322743b8973e002f31e7f, type: 3}
+  doorFlowchart: {fileID: 114907594814895230, guid: 9688cac7e18de964fa90fb24994c8d0e,
+    type: 2}
 --- !u!198 &198874033080994470
 ParticleSystem:
   m_ObjectHideFlags: 1
