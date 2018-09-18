@@ -24,7 +24,7 @@ public class PickUp : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(pickupSound, player.transform.position, 0.8f);
+            AudioSource.PlayClipAtPoint(pickupSound, player.transform.position, 1f);
             leafButton.SetActive(true);
             this.gameObject.SetActive(false);
             //Destroy(this.gameObject);

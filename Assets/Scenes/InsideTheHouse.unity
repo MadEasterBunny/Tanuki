@@ -6812,7 +6812,7 @@ GameObject:
   - component: {fileID: 1654319553}
   - component: {fileID: 1654319552}
   - component: {fileID: 1654319555}
-  - component: {fileID: 1654319556}
+  - component: {fileID: 1654319557}
   m_Layer: 0
   m_Name: Flowchart Outro
   m_TagString: Untagged
@@ -6903,7 +6903,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1654319552}
-  - {fileID: 1654319556}
+  - {fileID: 1654319557}
 --- !u!4 &1654319554
 Transform:
   m_ObjectHideFlags: 0
@@ -6932,69 +6932,24 @@ MonoBehaviour:
   scope: 1
   key: FadeDone
   value: 0
---- !u!114 &1654319556
+--- !u!114 &1654319557
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654319550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 2
+  itemId: 3
   indentLevel: 0
-  variable: {fileID: 1654319555}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
+  _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+    stringVal: Outro Cutscene
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!198 &1675753422 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198453301028646664, guid: e9f1657ccc3b9dc4c9c4e90d2ba068ed,
@@ -8548,6 +8503,8 @@ GameObject:
   - component: {fileID: 2133443586}
   - component: {fileID: 2133443587}
   - component: {fileID: 2133443582}
+  - component: {fileID: 2133443588}
+  - component: {fileID: 2133443589}
   m_Layer: 0
   m_Name: Flowchart Start Stealing
   m_TagString: Untagged
@@ -8581,9 +8538,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2133443583}
-  selectedCommands:
-  - {fileID: 2133443582}
-  - {fileID: 0}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -8597,7 +8552,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &2133443582
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2133443580}
@@ -8627,7 +8582,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 69
-    y: 69
+    y: 66
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8637,6 +8592,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 2133443586}
   commandList:
+  - {fileID: 2133443589}
+  - {fileID: 2133443588}
   - {fileID: 2133443582}
   - {fileID: 2133443587}
   - {fileID: 2133443584}
@@ -8757,6 +8714,42 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 1747422169}
+--- !u!114 &2133443588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133443580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  duration: 2
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &2133443589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133443580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  duration: 0
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1001 &2134538599
 Prefab:
   m_ObjectHideFlags: 0

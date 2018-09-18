@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
@@ -30,13 +30,13 @@ public class Goal : MonoBehaviour
             player.GetComponent<SideScrollerPlayerController>().enabled = false;
             flowchart1.ExecuteBlock("ToOutro");
             //Fix this below
-            StartCoroutine("LoadScene");
+            //StartCoroutine("LoadScene");
         }
     }
 
-    IEnumerator LoadScene()
+    /*IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(4f);
         SceneManager.LoadScene(4);
-    }
+    }*/
 }

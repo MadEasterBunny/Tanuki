@@ -901,7 +901,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1292762816}
   selectedCommands:
-  - {fileID: 1292762821}
+  - {fileID: 1292762817}
   - {fileID: 0}
   variables: []
   description: 
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  duration: 1
+  duration: 3
   fadeOut: 1
   targetView: {fileID: 1005484639}
   waitUntilFinished: 1
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   audioSourceOLD: {fileID: 0}
 --- !u!114 &1292762821
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1292762814}
