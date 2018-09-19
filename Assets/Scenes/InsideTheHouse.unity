@@ -6438,7 +6438,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3127a6a31bea30548b246aac856b28e5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8402,7 +8402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u305F\u306C\u304D"
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0.13725491, g: 0.33333334, b: 0.08235294, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
