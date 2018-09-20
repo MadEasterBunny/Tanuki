@@ -12,6 +12,8 @@ public class EnemyFlee : MonoBehaviour
     public float fleeSpeed = 10f;
 
     public GameObject key;
+    private AudioSource keySource;
+    public AudioClip keyDropSound;
 
     private bool keyDropped;
 
@@ -19,6 +21,7 @@ public class EnemyFlee : MonoBehaviour
     {
         player = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+        keySource = GetComponent<AudioSource>();
 	}
 	
 	void Update ()
@@ -40,6 +43,7 @@ public class EnemyFlee : MonoBehaviour
             {
                 if (!keyDropped)
                 {
+                    keySource.PlayOneShot(keyDropSound);
                     Instantiate(key, transform.position, transform.rotation);
                     keyDropped = true;
                 }
