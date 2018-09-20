@@ -49410,7 +49410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 872113999}
+  selectedFlowchart: {fileID: 2095090785}
 --- !u!4 &1168333970
 Transform:
   m_ObjectHideFlags: 1
@@ -52268,7 +52268,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549556361}
-  m_LocalRotation: {x: 0.09155243, y: -0.51694995, z: 0.055819064, w: 0.8492733}
+  m_LocalRotation: {x: 0.09155295, y: -0.5169502, z: 0.055819467, w: 0.84927315}
   m_LocalPosition: {x: 86.44, y: 13.25, z: 425.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -59571,8 +59571,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2095090787}
   selectedCommands:
-  - {fileID: 2095090792}
-  - {fileID: 0}
+  - {fileID: 2095090793}
   variables: []
   description: 
   stepPause: 0
