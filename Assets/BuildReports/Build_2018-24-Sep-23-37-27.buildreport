@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Build_2018-24-Sep-23-37-27
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 636733966383143870
+    buildGUID: 6b6e3d3179d8d424bbdbac01841103be
+    platformName: Android
+    platformGroupName: Android
+    options: 8
+    assetBundleOptions: 0
+    outputPath: C:/Users/hunti_000/Desktop/Ponpoko Dorobo Tanuki APK/PonpokoDoroboTanuki3.apk
+    crc: 0
+    totalSize: 0
+    totalTimeTicks: 93087416
+    totalErrors: 2
+    totalWarnings: 0
+    buildType: 1
+    buildResult: 2
+  m_Files: []
+  m_BuildSteps:
+  - stepName: Build player
+    durationTicks: 93087416
+    depth: 0
+    messages:
+    - type: 4
+      content: 'UnityException: Can not sign the application
+
+        Unable to sign the application; please provide passwords!'
+    - type: 0
+      content: Building Player failed
+  m_Appendices: []
