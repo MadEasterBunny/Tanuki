@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2079291, g: 0.17035827, b: 0.15932924, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.20860678, g: 0.17054987, b: 0.1599595, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 71840183}
   - component: {fileID: 71840184}
   - component: {fileID: 71840185}
+  - component: {fileID: 71840186}
   m_Layer: 0
   m_Name: FlowchartFirstSighting
   m_TagString: Untagged
@@ -248,7 +249,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 71840178}
   selectedCommands:
-  - {fileID: 71840181}
+  - {fileID: 71840186}
   variables: []
   description: 
   stepPause: 0
@@ -318,6 +319,7 @@ MonoBehaviour:
   - {fileID: 71840183}
   - {fileID: 71840185}
   - {fileID: 71840184}
+  - {fileID: 71840186}
 --- !u!114 &71840179
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -560,6 +562,70 @@ MonoBehaviour:
       - m_Target: {fileID: 1725932561}
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &71840186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71840175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 299628241}
+        m_MethodName: ResumeMovement
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9925,7 +9991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 65292450567064874, guid: 3c6a7819761c72b4e8155237de09eacd,
         type: 2}
@@ -10047,7 +10113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ed4088e71ce77d4d95ca3c82a6b9f17, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ed4088e71ce77d4d95ca3c82a6b9f17, type: 3}
       propertyPath: m_LocalScale.x
@@ -10746,7 +10812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -11371,8 +11437,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 38.760895, y: 7.514216, z: 27.783981}
-  m_Center: {x: 26.148499, y: 2.031944, z: 4.896675}
+  m_Size: {x: 38.760895, y: 7.514216, z: 12.022659}
+  m_Center: {x: 26.148499, y: 2.031944, z: -2.983986}
 --- !u!4 &299628243
 Transform:
   m_ObjectHideFlags: 0
@@ -11380,7 +11446,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 299628240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.167313, y: -7.997215, z: 3.501007}
+  m_LocalPosition: {x: -46.167313, y: -7.997215, z: 3.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1438846764}
@@ -16118,7 +16184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -16157,6 +16223,76 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &326565837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326565838}
+  - component: {fileID: 326565840}
+  - component: {fileID: 326565839}
+  m_Layer: 0
+  m_Name: "CM \u305F\u306C\u304D FPS"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &326565838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326565837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.33, z: 1.261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 592763566}
+  m_Father: {fileID: 9777890}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &326565839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326565837}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7623b04aee4474c8ed339c54db754b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 9777890}
+  offset: {x: -2.04, y: -1.37, z: 0.85}
+  pitch: 1.22
+--- !u!114 &326565840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326565837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 45
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+  m_ComponentOwner: {fileID: 592763566}
 --- !u!1001 &343051798
 Prefab:
   m_ObjectHideFlags: 0
@@ -16194,7 +16330,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -20890,7 +21026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -28636,7 +28772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -29936,6 +30072,91 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypointRadius: 1
   connectedRadius: 40
+--- !u!1 &592763565
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592763566}
+  - component: {fileID: 592763569}
+  - component: {fileID: 592763568}
+  - component: {fileID: 592763567}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &592763566
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592763565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 326565838}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &592763567
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592763565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 1
+  m_FollowOffset: {x: 17.820007, y: 9.23, z: -5.3899994}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+--- !u!114 &592763568
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592763565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 10
+  m_HorizontalDamping: 0.5
+  m_VerticalDamping: 0.5
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_DeadZoneWidth: 0.1
+  m_DeadZoneHeight: 0.08780488
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+--- !u!114 &592763569
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592763565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606525444
 GameObject:
   m_ObjectHideFlags: 0
@@ -40147,7 +40368,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_Range: 20
-  m_SpotAngle: 110.2135
+  m_SpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -42516,7 +42737,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -42571,6 +42792,7 @@ GameObject:
   - component: {fileID: 872114000}
   - component: {fileID: 872114006}
   - component: {fileID: 872114005}
+  - component: {fileID: 872114007}
   m_Layer: 0
   m_Name: Flowchart Leaf
   m_TagString: Untagged
@@ -42605,7 +42827,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 872114001}
   selectedCommands:
-  - {fileID: 872114006}
+  - {fileID: 872114007}
   variables: []
   description: 
   stepPause: 0
@@ -42711,6 +42933,7 @@ MonoBehaviour:
   - {fileID: 872114006}
   - {fileID: 872114005}
   - {fileID: 872114000}
+  - {fileID: 872114007}
 --- !u!114 &872114002
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -42829,6 +43052,70 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 809774316}
+--- !u!114 &872114007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 872113998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1079149315}
+        m_MethodName: ResumeMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &882144497
 GameObject:
   m_ObjectHideFlags: 0
@@ -43502,6 +43789,7 @@ GameObject:
   - component: {fileID: 1012094035}
   - component: {fileID: 1012094039}
   - component: {fileID: 1012094040}
+  - component: {fileID: 1012094041}
   m_Layer: 0
   m_Name: "Flowchart \u72AC"
   m_TagString: Untagged
@@ -43536,7 +43824,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1012094036}
   selectedCommands:
-  - {fileID: 1012094037}
+  - {fileID: 1012094041}
   variables: []
   description: 
   stepPause: 0
@@ -43603,6 +43891,7 @@ MonoBehaviour:
   - {fileID: 1012094040}
   - {fileID: 1012094035}
   - {fileID: 1012094039}
+  - {fileID: 1012094041}
 --- !u!114 &1012094037
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -43733,6 +44022,70 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 809774316}
+--- !u!114 &1012094041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012094033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1241531323}
+        m_MethodName: ResumeMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+BooleanEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+IntegerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+FloatEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Fungus.InvokeEvent+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1049315521
 GameObject:
   m_ObjectHideFlags: 0
@@ -48473,8 +48826,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 154.02484, y: 16.9642, z: 46.95809}
-  m_Center: {x: -15.325989, y: 6.756935, z: 14.48368}
+  m_Size: {x: 154.02484, y: 16.9642, z: 12.097545}
+  m_Center: {x: -15.326079, y: 6.756935, z: 16.311337}
 --- !u!4 &1079149317
 Transform:
   m_ObjectHideFlags: 0
@@ -48482,7 +48835,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1079149314}
   m_LocalRotation: {x: -0, y: -0.48104742, z: -0, w: 0.8766946}
-  m_LocalPosition: {x: -53.2, y: -4.1672144, z: 140.6}
+  m_LocalPosition: {x: -53.2, y: -4.47, z: 140.6}
   m_LocalScale: {x: 0.29068506, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1438846764}
@@ -48957,7 +49310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2025286797}
+  selectedFlowchart: {fileID: 872113999}
 --- !u!4 &1168333970
 Transform:
   m_ObjectHideFlags: 1
@@ -49045,8 +49398,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 198.94568, y: 7.514216, z: 21.177567}
-  m_Center: {x: -6.3986053, y: 2.031944, z: 1.5934677}
+  m_Size: {x: 198.94568, y: 7.514216, z: 5.700424}
+  m_Center: {x: -6.3986053, y: 2.031944, z: -6.1451035}
 --- !u!4 &1241531321
 Transform:
   m_ObjectHideFlags: 0
@@ -50635,7 +50988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -50774,7 +51127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -51666,7 +52019,7 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 9
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 1725932566}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
@@ -51681,7 +52034,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537595290}
-  m_LocalRotation: {x: 0.072150394, y: -0.8088973, z: 0.1015706, w: 0.574598}
+  m_LocalRotation: {x: 0.08961408, y: -0.8054293, z: 0.12615532, w: 0.5721345}
   m_LocalPosition: {x: 180.8, y: 9.81, z: 223.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -51815,7 +52168,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549556361}
-  m_LocalRotation: {x: 0.09152391, y: -0.5169599, z: 0.05595766, w: 0.8492612}
+  m_LocalRotation: {x: 0.09149245, y: -0.5162192, z: 0.055853363, w: 0.84972197}
   m_LocalPosition: {x: 86.44, y: 13.25, z: 425.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -51898,12 +52251,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotLight: {fileID: 1668509801}
-  viewDistance: 30
+  viewDistance: 25
   viewMask:
     serializedVersion: 2
     m_Bits: 1024
-  normalSpeed: 10
-  chaseSpeed: 11
+  normalSpeed: 9
+  chaseSpeed: 10
   enemyDistanceRun: 4
 --- !u!54 &1567245328
 Rigidbody:
@@ -52305,7 +52658,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_Range: 20
-  m_SpotAngle: 110.2135
+  m_SpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -52457,12 +52810,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotLight: {fileID: 685621427}
-  viewDistance: 30
+  viewDistance: 25
   viewMask:
     serializedVersion: 2
     m_Bits: 1024
-  normalSpeed: 10
-  chaseSpeed: 11
+  normalSpeed: 9
+  chaseSpeed: 10
   enemyDistanceRun: 4
 --- !u!54 &1725932563
 Rigidbody:
@@ -57718,7 +58071,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name
@@ -58289,7 +58642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4497001570096576, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1397637515368230, guid: 3c6a7819761c72b4e8155237de09eacd, type: 2}
       propertyPath: m_Name

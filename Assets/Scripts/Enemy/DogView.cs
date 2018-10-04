@@ -8,8 +8,8 @@ public class DogView : MonoBehaviour
     public Light spotLight;
     public float viewDistance;
     public LayerMask viewMask;
-    public float normalSpeed = 15f;
-    public float chaseSpeed = 20f;
+    public float normalSpeed = 12f;
+    public float chaseSpeed = 15f;
     public float enemyDistanceRun = 4.0f;
 
     private Color originalColor;

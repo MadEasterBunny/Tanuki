@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.AI;
 
 public class DialogueTriggerOldMan : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class DialogueTriggerOldMan : MonoBehaviour
 
     private GameObject enemy;
 
+    private NavMeshAgent agent;
+
     //Camera switch
     public GameObject cam1;
     public GameObject cam3;
@@ -22,12 +25,14 @@ public class DialogueTriggerOldMan : MonoBehaviour
     {
         player = PlayerManager.instance.player.gameObject;
         enemy = EnemyManager.instance.enemy.gameObject;
+        agent = player.GetComponent<NavMeshAgent>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
         {
+            agent.isStopped = true;
             player.GetComponent<PlayerController>().enabled = false;
             enemy.GetComponent<EnemyView>().enabled = false;
             dog1.GetComponent<DogView>().enabled = false;
@@ -62,5 +67,10 @@ public class DialogueTriggerOldMan : MonoBehaviour
         cam1.SetActive(false);
         yield return new WaitForSeconds(5f);
         cam1.SetActive(true);
+    }
+
+    public void ResumeMovement()
+    {
+       agent.isStopped = false;
     }
 }
