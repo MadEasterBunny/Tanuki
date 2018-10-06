@@ -12,6 +12,10 @@ public class DogView : MonoBehaviour
     public float chaseSpeed = 15f;
     public float enemyDistanceRun = 4.0f;
 
+    public AudioClip bark;
+    private AudioSource source;
+    private bool playedAudio = false;
+
     private Color originalColor;
     private float viewAngle;
     GameObject player;
@@ -30,6 +34,8 @@ public class DogView : MonoBehaviour
 
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         originalColor = spotLight.color;
+
+        source = GetComponent<AudioSource>();
     }
 
     bool CanSeePlayer()
@@ -61,11 +67,17 @@ public class DogView : MonoBehaviour
             {
                 agent.speed = chaseSpeed;
             }
+            if(!playedAudio)
+            {
+                source.PlayOneShot(bark);
+                playedAudio = true;
+            }
         }
         else
         {
             spotLight.color = originalColor;
             NormalPatrol();
+            playedAudio = false;
         }
     }
 
